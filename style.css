@@ -338,7 +338,7 @@ letter-spacing: 4px;
     
       .cv-leftcontent .contact-info {
         grid-row: 1 / span 1; /* Position contact info in the second row */
-        margin-top: -70px;      
+        margin-top: -50px;      
     
     }
       .contact-info ul{
