@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@400;600;700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat"  , sans-serif;
+
+}
+
+.cv-container{
+
+    display: flex;
+    margin: 0vw 15vw;
+}
+.cv-left{
+
+    flex: 10%;
+    background-color:black;
+    
+}
+.cv-leftcontent{
+    margin: 2vw 3vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vw;
+    align-items: start;
+
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap:  .8vw;
+    color: white;
+}
+
+.contact-info ul{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style: none;
+    font-size: .7vw;
+    
+}
+.list .icon{
+    margin-right: .5vw;
+    font-size: .9vw;
+    color: white;
+
+}
+.list-item{
+color: white;    font-weight: 600;
+    line-height: 1.7vw;
+    letter-spacing: 2px;
+}
+
+.skills{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+   
+
+}
+
+.skills .skills-content h2{
+    color: hsl(0, 0%, 60%);
+    letter-spacing: 2px;
+
+    align-self: flex-start;
+    font-weight:600;
+    font-size: 1.5vw;
+
+}
+.skills-content ul{
+    color: white;
+    line-height: 1.7vw;
+    letter-spacing: 2px;
+    margin-left: 1vw;
+    font-size: .9vw;
+    font-weight:600;
+
+
+}
+.education{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+   
+
+}
+.education h2{
+    color: hsl(0, 0%, 60%);
+    letter-spacing: 2px;
+
+    align-self: flex-start;
+    font-weight:600;
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+
+}
+.education-content h3{
+    align-self: flex-start;
+    font-size: .9vw;
+    letter-spacing: 1.2px;
+    font-weight:600;
+
+}
+.education-content ul{
+    
+    list-style: none;
+    color: white;
+    line-height: 1.7vw;
+    letter-spacing: 2px;
+    margin-left: 1vw;
+    font-size: .9vw;
+    justify-content: start;
+}
+.education-content li{
+    color: hsl(0, 0%, 60%);
+    font-weight: 600 ;
+    font-size: .9vw;
+    align-items: flex-start;
+
+}
+
+.cv-right{
+
+    flex: 60%;
+    background: #8e9eab;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to left, #eef2f3, #8e9eab);  
+    background: linear-gradient(to left, #eef2f3, #8e9eab);  */
+    }
+.cv-rightcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 3vw 3.5vw;
+    overflow: hidden;
+    
+}
+.cv-rightcontent h1 span{
+    font-size: 5vw;
+    line-height: 4vw;
+    background: linear-gradient(#000,#000);
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 0%;
+
+}
+.cv-rightcontent h1 span:last-child{
+    letter-spacing: 7px;
+    animation: animation 3s linear infinite alternate ;
+
+
+}
+.cv-rightcontent h1 span:first-child{
+    letter-spacing: 2px;
+    animation: animation 3s linear infinite alternate ;
+
+}
+@keyframes animation {
+    0%   {
+    
+        background-size: 0%;
+    }
+    40%{
+        background-size: 100%;
+
+    }
+    100% 
+    {background-size: 100%;
+    }
+
+    
+}
+
+
+.cv-rightcontent h4{
+    animation: slideIn 2s forwards ;
+
+font-weight: 600;
+font-size: 1.6vw;
+margin-top: 2vw;
+margin-bottom: 2vw;
+letter-spacing: 4px;
+
+
+}
+.cv-rightcontent .paragraph p{
+    
+    font-weight: 400;
+    line-height: 1.9vw;
+    margin-bottom: 2.4vw;
+    font-size: 1.4vw;
+    animation: slideIn 2s forwards ;
+
+}
+@keyframes slideIn {
+    from {
+
+      transform: translateX(-100%); /* Start from outside the container on the left */
+    }
+    to {
+      transform: translateX(0); /* Move to the original position */
+    }
+  }
+.experience{
+    display: flex;
+    flex-direction: column;
+    animation: slideIn 2s forwards ;
+
+}
+.experience h3{
+ font-weight: 600;
+font-size: 1.7vw;
+letter-spacing: 4px;
+}
+
+.experience-content h4{
+    margin-bottom: .6vw;
+    margin-top: .8vw;
+    font-weight: 600;
+    font-size: 1.2vw;
+   letter-spacing: 4px;
+   }
+   .experience-content ul{
+    margin-left: 2vw ;
+
+   }
+   .experience-content li{
+    line-height: 1.7vw;
+    font-size: 1vw;
+    font-weight: 500;
+   }
+   
+   .interest h3{
+    animation: slideIn 2s forwards ;
+
+    margin-bottom: 1.2vw;
+margin-top: 2.4vw;
+font-weight: 600;
+font-size: 1.7vw;
+letter-spacing: 4px;
+   }
+
+.interest ul{
+    animation: slideIn 2s forwards ;
+
+    list-style: none;
+}
+.interest li{
+    line-height: 1.7vw;
+    font-size: 1.2vw;
+    font-weight: 500;
+
+}
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    .cv-container {
+      flex-direction: column; /* Stack the sections vertically on smaller screens */
+      margin: 0 0vw; /* Adjust margin for smaller screens */
+    }
+ 
+    .cv-left, .cv-right {
+      width: 100%; /* Make left and right sections full width on smaller screens */
+    }
+  
+    .cv-rightcontent h1 span {
+      font-size: 8vw; /* Adjust font size for the name on smaller screens */
+    }
+  
+    .cv-rightcontent h4 {
+      font-size: 4vw; /* Increase font size for headings on smaller screens */
+      margin-top: 2vw; /* Adjust margin for headings on smaller screens */
+      margin-bottom: 1vw; /* Adjust margin for headings on smaller screens */
+    }
+  
+    .cv-rightcontent .paragraph p {
+      font-size: 4vw; /* Adjust font size for paragraphs on smaller screens */
+      line-height: 4.5vw; /* Adjust line height for paragraphs on smaller screens */
+      margin-bottom: 3vw; /* Adjust margin for paragraphs on smaller screens */
+    }
+    .experience h3 {
+        font-size: 4vw; /* Adjust font size for experience headings on smaller screens */
+        margin-bottom: 1.5vw; /* Adjust margin for experience headings on smaller screens */
+        margin-top: 2vw; /* Adjust margin for experience headings on smaller screens */
+      }
+    .experience-content h4 {
+      font-size: 3vw; /* Adjust font size for experience headings on smaller screens */
+      margin-bottom: 1.5vw; /* Adjust margin for experience headings on smaller screens */
+      margin-top: 2vw; /* Adjust margin for experience headings on smaller screens */
+    }
+    .experience-content ul{
+        margin-left: 3.5vw ;
+    
+       }
+    .experience-content li {
+      font-size: 2.8vw; /* Adjust font size for experience items on smaller screens */
+      line-height: 3vw; /* Adjust line height for experience items on smaller screens */
+    }
+  
+    .interest h3 {
+      font-size: 4.5vw; /* Adjust font size for interests heading on smaller screens */
+      margin-bottom: 2.5vw; /* Adjust margin for interests heading on smaller screens */
+      margin-top: 3.5vw; /* Adjust margin for interests heading on smaller screens */
+    }
+  
+    .interest li {
+      font-size: 3vw; /* Adjust font size for interest items on smaller screens */
+      line-height: 3.5vw; /* Adjust line height for interest items on smaller screens */
+    }
+    .interest .int-icon{
+        margin-right: 1vw; /* Adjust line height for interest items on smaller screens */
+      }
+  
+      .cv-leftcontent {
+        display: grid; /* Use grid for layout */
+        grid-template-columns: auto 1fr; /* First column for image, second column for content */
+        grid-template-rows: auto auto; /* Two rows for image and content */
+        align-items: center; /* Align items vertically */
+        gap: 1rem; /* Adjust gap between columns */
+        margin: 2vw 3vw; /* Adjust margin for the left container */
+      }
+    
+      .cv-leftcontent img {
+        width: 150px; /* Decrease photo size for smaller screens */
+        height: 150px;
+      }
+    
+      .cv-leftcontent .contact-info {
+        grid-row: 1 / span 1; /* Position contact info in the second row */
+        margin-top: -70px;      
+    
+    }
+      .contact-info ul{
+        font-size: 2vw;
+      }
+      .list .icon{
+        margin-right: .5vw;
+    font-size: 3vw;
+    color: white;
+      }
+      .list-item{
+        color: white;    font-weight: 600;
+            line-height: 3vw;
+            letter-spacing: 2px;
+        }
+      .cv-leftcontent .skills {
+        grid-column: 2 / span 1; /* Position skills in the second column */
+        grid-row: 1 / span 1; /* Align skills with image */
+      }
+      .skills ul li{
+        margin-left: 2vw;
+        font-size: small;
+        line-height: 3vw;
+            letter-spacing: 2px;
+
+      }
+    
+      .cv-leftcontent .education {
+        grid-column: 2 / span 1; /* Position education in the second column */
+        grid-row: 2 / span 1; /* Align education with contact info */
+      }
+      .education ul li,.education  h3{
+        font-size: 2vw;
+        line-height: 3vw;
+            letter-spacing: 2px;
+      }
+    
+      /* Adjust font size for headings */
+      .cv-leftcontent .skills-content h2,
+      .cv-leftcontent .education h2 {
+        font-size: 1.5rem;
+      }
+  }
+  
+  
+  
